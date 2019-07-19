@@ -4,21 +4,21 @@ const browserSync = require('browser-sync').create();
 
 //compile sccs
 function style() {
-  return gulp.src('./src/scss/**/*.scss')
+  return gulp.src('./scss/**/*.scss')
     .pipe(sass())
-    .pipe(gulp.dest('./src/css'))
+    .pipe(gulp.dest('./css'))
     .pipe(browserSync.stream());
 }
 
 function watch(){
   browserSync.init({
     server: {
-      baseDir: './src/'
+      baseDir: './'
     }
   });
-  gulp.watch('./src/scss/**/*.scss', style);
-  gulp.watch('./src/*.html').on('change', browserSync.reload);
-  gulp.watch('./src/js/**/*.js').on('change', browserSync.reload);
+  gulp.watch('./scss/**/*.scss', style);
+  gulp.watch('./*.html').on('change', browserSync.reload);
+  gulp.watch('./js/**/*.js').on('change', browserSync.reload);
 }
 
 exports.style = style;
