@@ -65,6 +65,8 @@ body {
       width: 40rem;
       line-height: 3rem;
       max-width: 80%; }
+    .fa-github {
+      padding: 2rem; }
 
 @media screen and (min-width: 1400px) {
   .header-text {
@@ -90,7 +92,7 @@ body {
     font-size: 3rem; }
   .header h2 {
     font-size: 2rem;
-    width: 30rem; }
+    padding: 0; }
   .header h3 {
     font-size: 1.5rem; } }
 
@@ -173,6 +175,7 @@ body {
     margin-bottom: 2rem; }
   .about p {
     margin: 0 auto;
+    padding: 1rem 0;
     max-width: 90%;
     line-height: 3rem;
     font-size: 2rem;
@@ -206,7 +209,7 @@ footer {
   color: white;
   text-align: center;
   margin-top: 10rem;
-  padding: 5rem 5rem 3rem; }
+  padding: 3rem 5rem; }
 
 .contact {
   text-align: center;
